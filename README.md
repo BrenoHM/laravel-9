@@ -1,4 +1,5 @@
-
+Laravel 9 com docker
+<!-- 
 # Setup Docker Para Projetos Laravel 9 com PHP 8
 [Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
 
@@ -79,4 +80,4 @@ php artisan key:generate
 
 
 Acesse o projeto
-[http://localhost:8180](http://localhost:8180)
+[http://localhost:8180](http://localhost:8180) -->
