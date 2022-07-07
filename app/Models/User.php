@@ -42,8 +42,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function getCreatedAtAttribute()
+    public function getUsers(string $search = '')
     {
-        return $this->attributes['created_at'];
+        $query = $this->query();
+
+        $query->when($search, function ($q, $search) { 
+            $q->where('name', 'LIKE', "%{$search}%");
+            $q->orWhere('email', 'LIKE', "%{$search}%");
+        });
+
+        return $query->get();
     }
+
 }
