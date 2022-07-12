@@ -16,6 +16,7 @@
             <li>{{$user->name}} 
                 <a href="{{ route('users.show', $user->id) }}">Detalhes</a>
                 <a href="{{ route('users.edit', $user->id) }}">Editar</a>
+                <a href="{{ route('users.comments', $user->id) }}">Comentários</a>
             </li>
         @endforeach
     </ul>    
